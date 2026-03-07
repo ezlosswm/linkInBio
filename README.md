@@ -1,42 +1,30 @@
-# sv
+📌 Link-in-Bio (SvelteKit) — README
+Link-in-Bio
+A simple SvelteKit “link in bio” web app (a single-page landing page with profile links), built for quick personal / creator landing pages.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+✅ Features
+✅ SvelteKit + TypeScript
+✅ Responsive, mobile-first layout
+✅ Easy to customize links / profile info
+✅ Built with modern tooling (Vite)
+✅ Deployable to platforms like Vercel, Netlify, or any static host
+🚀 Getting Started (Run Locally)
+From the project root:
 
-## Creating a project
+Then open: http://localhost:5173
 
-If you're seeing this, you've probably already done this step. Congrats!
+🧩 Project Structure (Key Files)
++page.svelte — main landing page UI
+navLinks.ts — link list data (edit to update links)
+layout.css — global styling
+static — static assets (images, robots.txt, etc.)
+✏️ Customizing Your Link Page
 
-```sh
-# create a new project
-npx sv create my-app
-```
+1. Update your links
+   Edit navLinks.ts to add, remove, or update link entries.
 
-To recreate this project with the same configuration:
+2. Change your profile info / layout
+   Update +page.svelte (and any components it uses) to reflect your name, image, bio, or theme.
 
-```sh
-# recreate this project
-npx sv@0.12.5 create --template minimal --types ts --add prettier eslint tailwindcss="plugins:none" --install npm linkInBio
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+📦 Build (Production)
+Then preview the build:
