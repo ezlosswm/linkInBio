@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-grotesk: 'Space Grotesk', sans-serif;
+	--font-syne: 'Syne', sans-serif;
+
+	--shadow-hard: 6px 6px 0 0 var(--color-dark-muted);
+	--shadow-hard-accent: 6px 6px 0 0 var(--color-bold-orange);
+	--shadow-hard-accent-lg: 8px 8px 0 0 var(--color-bold-orange);
+	--shadow-hard-sm: 3px 3px 0 0 var(--color-dark-muted);
+
+	--color-dark: #000000;
+	--color-dark-muted: #0a0a0a;
+
+	--color-dim-400: #4b5563;
+	--color-dim-300: #9ca3af;
+	--color-dim-200: #d1d5db;
+
+	--color-light: #ffffff;
+	--color-light-muted: #f5f5f5;
+
+	--color-bold-orange: #ff4d00;
+
+	--animate-banner: banner 10s linear infinite;
+	@keyframes banner {
+		0% {
+			transform: translateX(0%);
+		}
+		100% {
+			transform: translateX(-50%);
+		}
+	}
+}
+
+:root {
+	h1,
+	h2 {
+		text-transform: uppercase;
+		font-family: 'Syne', sans-serif;
+		font-display: swap;
+		font-style: normal;
+		letter-spacing: -0.05em;
+	}
+
+	body {
+		background-color: var(--color-light-muted);
+		background-image: radial-gradient(var(--color-dark-muted) 1px, transparent 1px);
+		background-size: 20px 20px;
+	}
+}
