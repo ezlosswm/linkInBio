@@ -13,6 +13,12 @@ export const navLink = [
 	},
 	{
 		id: '003',
+		label: 'Resume',
+		href: 'https://carlos-gomez.vercel.app/resume',
+		description: 'Hire Me?'
+	},
+	{
+		id: '004',
 		label: 'Contact',
 		href: 'https://carlos-gomez.vercel.app/#projects',
 		description: 'Request a Handshake'
