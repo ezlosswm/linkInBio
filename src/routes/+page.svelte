@@ -21,7 +21,7 @@
 		content="Explore the portfolio and projects of Carlos Gomez, a Frontend / Web Developer based in Belize."
 	/>
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="/src/lib/assets/images/image.png" />
+	<meta property="og:image" content="./assets/images/image.png" />
 	<meta property="og:url" content="https://carlos-gomez.vercel.app/" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Carlos Gomez — Frontend / Web Developer / Belizean" />
@@ -44,10 +44,15 @@
 
 		<div class="relative float-right mb-4 ml-4">
 			<div class="absolute inset-0 -z-10 translate-x-2 translate-y-2 bg-bold-orange"></div>
-			<div class="size-32 overflow-hidden border-3 border-dark-muted bg-gray-300 md:h-40 md:w-40">
+			<div class="overflow-hidden border-3 border-dark-muted bg-gray-300 md:h-40 md:w-40">
 				<img
+					loading="eager"
+					fetchpriority="high"
+					width="160"
+					height="160"
+					decoding="async"
 					src={profile}
-					class="duratio-700 size-full object-cover contrast-125 grayscale transition-all group-hover/card:grayscale-25"
+					class="size-full object-cover contrast-125 grayscale transition-all duration-700 group-hover/card:grayscale-25"
 					alt="Carlos Gomez Profile"
 				/>
 			</div>
@@ -100,7 +105,7 @@
 		</div>
 
 		<div class="mt-8 flex flex-wrap items-end justify-between gap-4 lg:mt-16">
-			<div class="max-w-[200px] border-3 border-dark-muted p-2">
+			<div class="max-w-50 border-3 border-dark-muted p-2">
 				<p class="text-xs leading-tight font-bold uppercase">Status:Active</p>
 			</div>
 
@@ -123,7 +128,7 @@
 
 	<!-- Floating square left -->
 	<div
-		class="pointer-events-none absolute top-[20%] -left-8 h-24 w-12 -rotate-12 border-3 border-dark bg-white transition-all duration-700 group-hover/card:rotate-12 group-hover/card:bg-bold-orange md:-left-12"
+		class="pointer-events-none absolute top-[20%] -left-8 h-24 w-12 -rotate-12 border-3 border-dark bg-white transition-transform duration-700 group-hover/card:rotate-12 group-hover/card:bg-bold-orange md:-left-12"
 	></div>
 </div>
 
