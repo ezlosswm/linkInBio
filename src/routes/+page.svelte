@@ -1,5 +1,5 @@
 <script lang="ts">
-	import profile from '$lib/assets/images/image.png';
+	import profile from '$lib/assets/images/profile.webp';
 
 	import { navLink } from '$lib/navLinks';
 </script>
@@ -21,8 +21,7 @@
 		content="Explore the portfolio and projects of Carlos Gomez, a Frontend / Web Developer based in Belize."
 	/>
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="./assets/images/image.png" />
-	<meta property="og:url" content="https://carlos-gomez.vercel.app/" />
+	<meta property="og:url" content="https://ezlos.vercel.app/" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Carlos Gomez — Frontend / Web Developer / Belizean" />
 	<meta
@@ -33,7 +32,9 @@
 
 <div class="group/card relative">
 	<!-- Top right square -->
-	<div class="absolute -top-10 -right-10 size-40 rotate-12 bg-bold-orange opacity-20"></div>
+	<div
+		class="absolute -top-10 -right-10 size-40 rotate-12 bg-bold-orange opacity-20 transition-transform duration-700 group-hover/card:rotate-0"
+	></div>
 
 	<header class="relative mb-12 border-b-6 border-dark pb-4">
 		<div
@@ -44,7 +45,7 @@
 
 		<div class="relative float-right mb-4 ml-4">
 			<div class="absolute inset-0 -z-10 translate-x-2 translate-y-2 bg-bold-orange"></div>
-			<div class="overflow-hidden border-3 border-dark-muted bg-gray-300 md:h-40 md:w-40">
+			<div class="size-32 overflow-hidden border-3 border-dark-muted bg-gray-300 md:h-40 md:w-40">
 				<img
 					loading="eager"
 					fetchpriority="high"
@@ -78,7 +79,7 @@
 		{#each navLink as link}
 			<a
 				href={link.href}
-				class="glitch group/link relative block cursor-pointer border-3 border-dark bg-light-muted p-6 shadow-hard-sm transition-all last:bg-dark-muted last:text-light-muted last:shadow-hard-accent"
+				class="glitch group/link relative block cursor-pointer border-3 border-dark bg-light-muted p-6 shadow-hard-sm transition-transform last:bg-dark-muted last:text-light-muted last:shadow-hard-accent"
 			>
 				<span
 					class="absolute top-0 right-0 bg-dark-muted px-2 py-1 text-xs text-light-muted uppercase group-last:text-light-muted group-last/link:bg-bold-orange"
@@ -106,7 +107,7 @@
 
 		<div class="mt-8 flex flex-wrap items-end justify-between gap-4 lg:mt-16">
 			<div class="max-w-50 border-3 border-dark-muted p-2">
-				<p class="text-xs leading-tight font-bold uppercase">Status:Active</p>
+				<p class="text-xs leading-tight font-bold uppercase">Status: Active</p>
 			</div>
 
 			<div class="text-right">
